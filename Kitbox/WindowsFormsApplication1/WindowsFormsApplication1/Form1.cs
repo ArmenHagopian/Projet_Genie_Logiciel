@@ -24,7 +24,28 @@ namespace WindowsFormsApplication1
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Form2.Show();
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
+//            MessageBox.Show("test");
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+                Form4 form4 = new Form4();
+                form4.Show();
+                this.Hide();
+        
+    
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
+
+   
 }
