@@ -9,7 +9,7 @@ namespace Kitbox
 {
     public class codeBill
     {
-		public override string ToString()
+		public string GetBill()
 		{
 			//reference et code pour la liste des composants
 			// faire la somme des articles identiques
@@ -38,7 +38,6 @@ namespace Kitbox
             Console.ReadLine();
 
             */
-			//True if the type is Box
 		}
 
 		private string Components()
