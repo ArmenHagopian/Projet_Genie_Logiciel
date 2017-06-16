@@ -36,5 +36,18 @@ namespace Kitbox
 
             return order;
         }
+		public static List<List<object>> DbSearchOrder(string tableName, string columnNames, string condition)
+		{
+			List<List<object>> result = new List<object>();
+
+			//string columnNames = "DISTINCT Component_Id, Wardrobe_Id, Box_ID";
+			//string tableName = "rel_Cat_Ord";
+			//string condition = string.Format("WHERE (Order_Id = {0})", order_id);
+			BDD database = new BDD("kitbox");
+
+			result = database.readelement(columnNames, tableName, condition);
+
+			return result;
+		}
     }
 }
